@@ -1,7 +1,7 @@
-package clases;
+package person;
 import java.util.*;
 
-public class Objects 
+public class MainPersona 
 {
     public static void main(String[] args) {
         var persona = new Persona();

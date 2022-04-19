@@ -1,4 +1,4 @@
-package clases;
+package person;
 
 public class Persona {
 

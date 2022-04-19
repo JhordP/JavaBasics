@@ -1,6 +1,6 @@
 package caja;
 
-public class mainCaja {
+public class MainCaja {
     public static void main(String[] args) {
 
         var calcular1 = new Caja();
