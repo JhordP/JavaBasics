@@ -33,6 +33,7 @@ public class Empleado extends Persona{
     public String toString() {
         StringBuilder sb = new StringBuilder(); //Clase StringBuilder para que no se creen nuevos objetos por cada cadena.
         //Simplemente usar el metodo append para añadir informacion al objeto. 
+        
         //En el caso de "Nombre" que es heredado se puede usar super.atributo o this.nombre porque es la misma instancia.
         sb.append("\nId Empleado: "+this.idEmpleado).append("\tSueldo: "+this.sueldo).append("\tNombre: "+super.nombre); 
 
