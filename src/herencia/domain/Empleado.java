@@ -11,10 +11,16 @@ public class Empleado extends Persona{
 
     }*/
 
-    public Empleado(String nombre, double sueldo){
-        super(nombre);
-        this.sueldo = sueldo;
+    public Empleado() {
         this.idEmpleado = ++Empleado.contadorID;
+    }
+
+    public Empleado(String nombre, double sueldo){
+        //super(nombre);
+        this(); //Al llamar this() o constructor vacio (linea 14) no se puede usar super. Es una u otra.
+        this.setNombre(nombre); //Asi que utilizamos el Set de la variable para asignar el valor del argumento.
+        this.sueldo = sueldo;
+        
     }
 
     public int getIdEmpleado() {
