@@ -12,6 +12,7 @@ public class Empleado extends Persona{
     }*/
 
     public Empleado() {
+        //super(); Siempre, SIEMPRE en la primera linea de un constructor se manda a llamar al constructor de la clase padre, aunque no lo especifiquemos.
         this.idEmpleado = ++Empleado.contadorID;
     }
 
