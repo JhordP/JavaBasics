@@ -1,4 +1,5 @@
-package arreglos;
+//Main:
+import arreglos.*;
 
 public class MainArray {
     public static void main(String args[]) {
@@ -17,5 +18,7 @@ public class MainArray {
             System.out.println("edades["+i+"]"+": "+edades[i]);
         }
         
+        MainArrayObject obj = new MainArrayObject();
+               
     }
 }
