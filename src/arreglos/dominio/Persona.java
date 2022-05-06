@@ -1,5 +1,5 @@
 //Persona:
-package dominio;
+package arreglos.dominio;
 
 public class Persona
 {
