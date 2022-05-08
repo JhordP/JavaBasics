@@ -1,3 +1,5 @@
+package arreglos.matrices.dominio;
+
 public class Persona
 {
     private String nombre;
@@ -16,7 +18,7 @@ public class Persona
     {
         this.nombre = nombre;
     }
-    
+
     public String toString() 
     {
         return this.nombre;

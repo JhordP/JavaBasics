@@ -1,3 +1,6 @@
+package arreglos.matrices;
+import arreglos.matrices.dominio.Persona;
+
 public class MainMatrices
 {
 	public static void main(String[] args) {
@@ -25,14 +28,26 @@ public class MainMatrices
 		
 		//{primera fila{columna1,columna2},segunda fila{columna1,columna2}etc...}
 		String frutas[][] = {{"Naranja","Limon"},{"Fresa","Arandano"},{"Manzana","Pera"}}; 
-		
-		System.out.println("Frutas:\n");
-		for (int f=0; f<frutas.length/*Filas*/ ;f++ ){
-		    for (int c=0; c<frutas[f].length/*Cant. de Columnas en la fila*/ ;c++ ){
-		        System.out.print(frutas[f][c]+"  "); //Uso print en vez de println para que no salte la linea.
+
+		//Objetos en matrices
+		Persona personas[][] = new Persona[2][3];
+		personas[0][0] = new Persona("Juan");
+		personas[0][1] = new Persona("Karla");
+		personas[0][2] = new Persona("Jose");
+		personas[1][0] = new Persona("Lisbeth");
+		personas[1][1] = new Persona("Raul");
+		personas[1][2] = new Persona("Jaqueline");
+		imprimir(personas);
+	}
+
+	//Metodo para el for
+	public static void imprimir(Object matriz[][]) {
+		System.out.println("\n"+matriz.getClass().getName());
+		for (int f=0; f<matriz.length/*Filas*/ ;f++ ){
+		    for (int c=0; c<matriz[f].length/*Cant. de Columnas en la fila*/ ;c++ ){
+		        System.out.print(matriz[f][c]+"\t"); //Uso print en vez de println para que no salte la linea.
 		    }
 		    System.out.println("\n");
 		} 
-		
 	}
 }
