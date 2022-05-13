@@ -46,10 +46,10 @@ public class Producto
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("\nID Producto: "+this.idProducto+"\n").append("Nombre Producto:"+this.nombre+"\n")
-          .append("Precio Producto: "+this.precio+" pesos\n");
+        sb.append("ID Producto: "+this.idProducto+"\t").append("Nombre Producto:"+this.nombre+"\t")
+          .append("Precio Producto: "+this.precio+" pesos\t");
         
-        return "[PRODUCTO]\n"+sb.toString();
+        return "\n"+sb.toString();
     }
     
 }
