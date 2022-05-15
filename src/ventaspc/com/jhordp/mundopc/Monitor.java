@@ -1,3 +1,4 @@
+package ventaspc.com.jhordp.mundopc;
 //package ventaspc.com.jhordp.mundopc
 
 public class Monitor {
@@ -41,9 +42,9 @@ public class Monitor {
     @Override
     public String toString() {
         StringBuilder cadena = new StringBuilder();
-        cadena.append("Monitor ID: "+this.getIdMonitor+"\n")
-              .append("Marca Monitor: "+this.getMarca+"\n")
-              .append("Tamaño: "+this.getTamano);
+        cadena.append("Monitor ID: "+this.getIdMonitor()+"\n")
+              .append("Marca Monitor: "+this.getMarca()+"\n")
+              .append("Tamaño: "+this.getTamano());
         return cadena.toString();
     } 
 }

@@ -1,3 +1,4 @@
+package ventaspc.com.jhordp.mundopc;
 //package ventaspc.com.jhordp.mundopc
 
 public class Teclado extends DispositivoEntrada{

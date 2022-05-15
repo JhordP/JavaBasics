@@ -1,4 +1,4 @@
-//package ventaspc.com.jhordp.mundopc
+package ventaspc.com.jhordp.mundopc;
 
 public class Computadora {
     //Atributos
@@ -24,7 +24,7 @@ public class Computadora {
     
     //Get&Set
         //idComputadora
-    public String getIdComputadora() {
+    public int getIdComputadora() {
         return this.idComputadora;
     }
     
@@ -63,7 +63,7 @@ public class Computadora {
     @Override
     public String toString() {
         StringBuilder cadena = new StringBuilder();
-        cadena.append("[Computadora]\PC ID: "+this.idComputadora)
+        cadena.append("[Computadora]\nPC ID: "+this.idComputadora)
               .append("\nNombre PC: "+this.nombre).append("\nMonitor:\n"+this.monitor)
               .append("\nTeclado: "+this.teclado).append("\nMouse: "+this.mouse);
         return cadena.toString();
