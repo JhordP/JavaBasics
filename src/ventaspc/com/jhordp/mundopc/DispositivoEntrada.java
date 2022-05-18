@@ -33,7 +33,7 @@ public class DispositivoEntrada {
     public String toString() {
         StringBuilder cadena = new StringBuilder();
         cadena.append("Tipo de Entrada: "+this.tipoEntrada)
-              .append("Marca: "+this.marca);
+              .append("\tMarca: "+this.marca);
         
         return cadena.toString();
     }

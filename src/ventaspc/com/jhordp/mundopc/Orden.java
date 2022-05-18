@@ -26,7 +26,7 @@ public class Orden {
         System.out.println("Orden #: "+this.idOrden);
         System.out.println("Computadoras de la orden #:" + this.idOrden);
         for (Computadora computadora : this.computadoras) {
-            System.out.println(computadora); 
+            System.out.println(computadora+"\n----"); 
         }
     }
 }
