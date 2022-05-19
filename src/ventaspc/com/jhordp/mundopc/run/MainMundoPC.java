@@ -14,9 +14,15 @@ public class MainMundoPC {
         Computadora pcHP = new Computadora("Computadora HP", monitorHP, tecladoHP, mouseHP);
         Computadora pcMSI = new Computadora("Computadora MSI", monitorMSI, tecladoMSI, mouseMSI);
 
+        Monitor tv = new Monitor("Winia", 34);
+        Teclado tecladoacer = new Teclado("Acer", "Nitro-5");
+        Computadora laptopC = new Computadora("EsclavaPC", tv, tecladoacer, mouseMSI);
+
         Orden orden1 = new Orden();
         orden1.agregarComputadora(pcHP);
         orden1.agregarComputadora(pcMSI);
+        orden1.agregarComputadora(laptopC);
+
         orden1.mostrarOrden();
     }
 }
